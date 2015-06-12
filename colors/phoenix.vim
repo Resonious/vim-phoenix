@@ -213,31 +213,31 @@ hi Todo                       guifg=#DEDD5A guibg=NONE    gui=bold      ctermfg=
 
 if s:accent == "red"
   hi IncSearch                guifg=#EFEFEF guibg=#C5282F gui=NONE      ctermfg=255   ctermbg=001
-  hi MatchParen               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=001
+  hi MatchParen               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=001   ctermbg=235
   hi Search                   guifg=#FFFFFF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=001
 endif
 
 if s:accent == "green"
   hi IncSearch                guifg=#191919 guibg=#65910F gui=NONE      ctermfg=255   ctermbg=002
-  hi MatchParen               guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
+  hi MatchParen               guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=002   ctermbg=235
   hi Search                   guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
 endif
 
 if s:accent == "yellow"
   hi IncSearch                guifg=#191919 guibg=#C3BA4D gui=NONE      ctermfg=255   ctermbg=226
-  hi MatchParen               guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
+  hi MatchParen               guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=226   ctermbg=235
   hi Search                   guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
 endif
 
 if s:accent == "orange"
   hi IncSearch                guifg=#FFFFFF guibg=#FBBE1C gui=NONE      ctermfg=255   ctermbg=208
-  hi MatchParen               guifg=#191919 guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
+  hi MatchParen               guifg=#191919 guibg=#C88623 gui=NONE      ctermfg=208   ctermbg=235
   hi Search                   guifg=#FFFFFF guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
 endif
 
 if s:accent == "purple"
   hi IncSearch                guifg=#FFFFFF guibg=#D1AFDD gui=NONE      ctermfg=255   ctermbg=013
-  hi MatchParen               guifg=#191919 guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
+  hi MatchParen               guifg=#191919 guibg=#B294BB gui=NONE      ctermfg=013   ctermbg=235
   hi Search                   guifg=#FFFFFF guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
 endif
 
