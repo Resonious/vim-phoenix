@@ -76,6 +76,11 @@ endif
 " Purple Tertiary             #D1AFDD
 
 
+" Gray Prime                  #B294BB
+" Gray Secondary              #A582A3
+" Gray Tertiary               #D1AFDD
+
+
 
 
 
@@ -111,6 +116,22 @@ hi Underlined                 guifg=#CCCCCC guibg=NONE    gui=underline ctermfg=
 
 if s:background == "eighties"
   hi Normal                   guibg=#2D2D2D                             ctermbg=000
+endif
+
+if s:accent == "gray"
+  hi Constant                 guifg=#FF3D23 guibg=NONE    gui=NONE      ctermfg=244
+  hi Directory                guifg=#FF3D23 guibg=NONE    gui=NONE      ctermfg=244
+  hi Type                     guifg=#C5282F guibg=NONE    gui=NONE      ctermfg=244
+  hi SpecialKey               guifg=#FF3D23 guibg=NONE    gui=NONE      ctermfg=244
+  hi Conditional              guifg=#C5282F guibg=NONE    gui=NONE      ctermfg=244
+  hi Exception                guifg=#C5282F guibg=NONE    gui=NONE      ctermfg=244
+  hi Label                    guifg=#C5282F guibg=NONE    gui=NONE      ctermfg=244
+  hi Repeat                   guifg=#C5282F guibg=NONE    gui=NONE      ctermfg=244
+  hi Keyword                  guifg=#C5282F guibg=NONE    gui=NONE      ctermfg=244
+  hi String                   guifg=#C04B43 guibg=NONE    gui=NONE      ctermfg=244
+  hi Character                guifg=#FF3D23 guibg=NONE    gui=NONE      ctermfg=244
+  hi Boolean                  guifg=#FF3D23 guibg=NONE    gui=NONE      ctermfg=244
+  hi Number                   guifg=#FF3D23 guibg=NONE    gui=NONE      ctermfg=244
 endif
 
 if s:accent == "red"
@@ -211,6 +232,12 @@ hi Search                     guifg=#EFEFEF guibg=#40BDFF gui=NONE      ctermfg=
 hi Error                      guifg=#FF3D23 guibg=NONE    gui=bold      ctermfg=009   ctermbg=NONE
 hi Todo                       guifg=#DEDD5A guibg=NONE    gui=bold      ctermfg=226   ctermbg=NONE
 
+if s:accent == "gray"
+  hi IncSearch                guifg=#EFEFEF guibg=#C5282F gui=NONE      ctermfg=255   ctermbg=244
+  hi MatchParen               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=244   ctermbg=235
+  hi Search                   guifg=#FFFFFF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=001
+endif
+
 if s:accent == "red"
   hi IncSearch                guifg=#EFEFEF guibg=#C5282F gui=NONE      ctermfg=255   ctermbg=001
   hi MatchParen               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=001   ctermbg=235
@@ -278,6 +305,14 @@ hi OverLength                 guifg=NONE    guibg=#20272F gui=NONE      ctermfg=
 
 if s:background == "eighties"
   hi LineNr                   ctermbg=232
+endif
+
+if s:accent == "gray"
+  hi PmenuSel                 guifg=#EFEFEF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=244
+  hi PmenuThumb               guifg=#EFEFEF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=244
+  hi FoldColumn               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=244
+  hi Folded                   guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=244
+  hi OverLength               guifg=NONE    guibg=#641900 gui=NONE      ctermfg=NONE  ctermbg=052
 endif
 
 if s:accent == "red"
@@ -356,6 +391,10 @@ hi helpSpecial                guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=
 hi helpHyperTextJump          guifg=#40BDFF guibg=NONE    gui=underline ctermfg=039
 hi helpNote                   guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=250
 
+if s:accent == "gray"
+  hi helpHyperTextJump        guifg=#FF3D23 guibg=NONE    gui=underline ctermfg=244   ctermbg=NONE    cterm=underline
+endif
+
 if s:accent == "red"
   hi helpHyperTextJump        guifg=#FF3D23 guibg=NONE    gui=underline ctermfg=001   ctermbg=NONE    cterm=underline
 endif
@@ -412,6 +451,8 @@ command! PhoenixYellow call SetPhoenix("normal", "yellow")
 command! PhoenixOrange call SetPhoenix("normal", "orange")
             \ | colorscheme phoenix
 command! PhoenixPurple call SetPhoenix("normal", "purple")
+            \ | colorscheme phoenix
+command! PhoenixGray call SetPhoenix("normal", "gray")
             \ | colorscheme phoenix
 
 command! PhoenixBlueEighties call SetPhoenix("eighties", "blue")
