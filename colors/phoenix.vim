@@ -33,7 +33,7 @@ endif
 " Colors
 " ----------------------------------------------------------------------------
 
-" Background                  #191919
+" Background                  #0C0C0C
 " Background (Eighties)       #2D2D2D
 " Foreground                  #CCCCCC
 " Invisibles                  #6A6A6A
@@ -89,7 +89,7 @@ endif
 " Text Markup
 " ----------------------------------------------------------------------------
 
-hi Normal                     guifg=#CCCCCC guibg=#191919 gui=NONE      ctermfg=250
+hi Normal                     guifg=#CCCCCC guibg=#0C0C0C gui=NONE      ctermfg=250
 hi NonText                    guifg=#6A6A6A guibg=NONE    gui=NONE      ctermfg=008
 hi Comment                    guifg=#555555 guibg=NONE    gui=NONE      ctermfg=243
 hi Constant                   guifg=#40BDFF guibg=NONE    gui=NONE      ctermfg=039
@@ -221,50 +221,50 @@ endif
 " ----------------------------------------------------------------------------
 
 hi Cursor                     guifg=#6A6A6A guibg=#EFEFEF gui=NONE      ctermfg=008   ctermbg=255
-hi CursorIM                   guifg=#191919 guibg=#CCCCCC gui=NONE      ctermfg=008   ctermbg=255
+hi CursorIM                   guifg=#0C0C0C guibg=#CCCCCC gui=NONE      ctermfg=008   ctermbg=255
 hi CursorColumn               guifg=NONE    guibg=#292929 gui=NONE      ctermfg=NONE  ctermbg=008     cterm=NONE
 hi CursorLine                 guifg=NONE    guibg=#292929 gui=NONE      ctermfg=NONE  ctermbg=008     cterm=NONE
 hi Visual                     guifg=#EFEFEF guibg=#515151 gui=NONE      ctermfg=255   ctermbg=008
 hi VisualNOS                  guifg=#EFEFEF guibg=#515151 gui=NONE      ctermfg=255   ctermbg=008
 hi IncSearch                  guifg=#EFEFEF guibg=#64B2DB gui=NONE      ctermfg=255   ctermbg=039
-hi MatchParen                 guifg=#191919 guibg=#40BDFF gui=NONE      ctermfg=039   ctermbg=253
+hi MatchParen                 guifg=#0C0C0C guibg=#40BDFF gui=NONE      ctermfg=039   ctermbg=253
 hi Search                     guifg=#EFEFEF guibg=#40BDFF gui=NONE      ctermfg=255   ctermbg=039
 hi Error                      guifg=#FF3D23 guibg=NONE    gui=bold      ctermfg=009   ctermbg=NONE
 hi Todo                       guifg=#DEDD5A guibg=NONE    gui=bold      ctermfg=226   ctermbg=NONE
 
 if s:accent == "gray"
   hi IncSearch                guifg=#EFEFEF guibg=#C5282F gui=NONE      ctermfg=255   ctermbg=244
-  hi MatchParen               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=244   ctermbg=235
+  hi MatchParen               guifg=#0C0C0C guibg=#FF3D23 gui=NONE      ctermfg=244   ctermbg=235
   hi Search                   guifg=#FFFFFF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=001
 endif
 
 if s:accent == "red"
   hi IncSearch                guifg=#EFEFEF guibg=#C5282F gui=NONE      ctermfg=255   ctermbg=001
-  hi MatchParen               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=001   ctermbg=235
+  hi MatchParen               guifg=#0C0C0C guibg=#FF3D23 gui=NONE      ctermfg=001   ctermbg=235
   hi Search                   guifg=#FFFFFF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=001
 endif
 
 if s:accent == "green"
-  hi IncSearch                guifg=#191919 guibg=#65910F gui=NONE      ctermfg=255   ctermbg=002
-  hi MatchParen               guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=002   ctermbg=235
-  hi Search                   guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
+  hi IncSearch                guifg=#0C0C0C guibg=#65910F gui=NONE      ctermfg=255   ctermbg=002
+  hi MatchParen               guifg=#0C0C0C guibg=#87BF19 gui=NONE      ctermfg=002   ctermbg=235
+  hi Search                   guifg=#0C0C0C guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
 endif
 
 if s:accent == "yellow"
-  hi IncSearch                guifg=#191919 guibg=#C3BA4D gui=NONE      ctermfg=255   ctermbg=226
-  hi MatchParen               guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=226   ctermbg=235
-  hi Search                   guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
+  hi IncSearch                guifg=#0C0C0C guibg=#C3BA4D gui=NONE      ctermfg=255   ctermbg=226
+  hi MatchParen               guifg=#0C0C0C guibg=#DEDD5A gui=NONE      ctermfg=226   ctermbg=235
+  hi Search                   guifg=#0C0C0C guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
 endif
 
 if s:accent == "orange"
   hi IncSearch                guifg=#FFFFFF guibg=#FBBE1C gui=NONE      ctermfg=255   ctermbg=208
-  hi MatchParen               guifg=#191919 guibg=#C88623 gui=NONE      ctermfg=208   ctermbg=235
+  hi MatchParen               guifg=#0C0C0C guibg=#C88623 gui=NONE      ctermfg=208   ctermbg=235
   hi Search                   guifg=#FFFFFF guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
 endif
 
 if s:accent == "purple"
   hi IncSearch                guifg=#FFFFFF guibg=#D1AFDD gui=NONE      ctermfg=255   ctermbg=013
-  hi MatchParen               guifg=#191919 guibg=#B294BB gui=NONE      ctermfg=013   ctermbg=235
+  hi MatchParen               guifg=#0C0C0C guibg=#B294BB gui=NONE      ctermfg=013   ctermbg=235
   hi Search                   guifg=#FFFFFF guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
 endif
 
@@ -287,7 +287,7 @@ hi WarningMsg                 guifg=#DEDD5A guibg=NONE    gui=NONE      ctermfg=
 " ----------------------------------------------------------------------------
 
 hi ColorColumn                guifg=#CCCCCC guibg=#292929 gui=bold      ctermfg=250   ctermbg=008
-hi Pmenu                      guifg=#EFEFEF guibg=#191919 gui=NONE      ctermfg=255   ctermbg=000
+hi Pmenu                      guifg=#EFEFEF guibg=#0C0C0C gui=NONE      ctermfg=255   ctermbg=000
 hi PmenuSel                   guifg=#EFEFEF guibg=#40BDFF gui=NONE      ctermfg=255   ctermbg=039
 hi PmenuThumb                 guifg=#EFEFEF guibg=#40BDFF gui=NONE      ctermfg=255   ctermbg=039
 hi StatusLine                 guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=250   ctermbg=NONE
@@ -295,8 +295,8 @@ hi StatusLineNC               guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=
 hi CursorLineNr               guifg=#CCCCCC guibg=#292929 gui=bold      ctermfg=255   ctermbg=NONE    cterm=bold
 hi TabLine                    guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=250   ctermbg=NONE    cterm=NONE
 hi TabLineFill                guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=250   ctermbg=NONE    cterm=NONE
-hi FoldColumn                 guifg=#191919 guibg=#40BDFF gui=NONE      ctermfg=235   ctermbg=039
-hi Folded                     guifg=#191919 guibg=#40BDFF gui=NONE      ctermfg=235   ctermbg=039
+hi FoldColumn                 guifg=#0C0C0C guibg=#40BDFF gui=NONE      ctermfg=235   ctermbg=039
+hi Folded                     guifg=#0C0C0C guibg=#40BDFF gui=NONE      ctermfg=235   ctermbg=039
 hi LineNr                     guifg=#6A6A6A guibg=#0F0F0F gui=NONE      ctermfg=245   ctermbg=000
 hi SignColumn                 guifg=#EFEFEF guibg=NONE    gui=NONE      ctermfg=255   ctermbg=NONE
 hi VertSplit                  guifg=#AAAAAA guibg=NONE    gui=NONE      ctermfg=246   ctermbg=000
@@ -310,48 +310,48 @@ endif
 if s:accent == "gray"
   hi PmenuSel                 guifg=#EFEFEF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=244
   hi PmenuThumb               guifg=#EFEFEF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=244
-  hi FoldColumn               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=244
-  hi Folded                   guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=244
+  hi FoldColumn               guifg=#0C0C0C guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=244
+  hi Folded                   guifg=#0C0C0C guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=244
   hi OverLength               guifg=NONE    guibg=#641900 gui=NONE      ctermfg=NONE  ctermbg=052
 endif
 
 if s:accent == "red"
   hi PmenuSel                 guifg=#EFEFEF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=001
   hi PmenuThumb               guifg=#EFEFEF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=001
-  hi FoldColumn               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=001
-  hi Folded                   guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=001
+  hi FoldColumn               guifg=#0C0C0C guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=001
+  hi Folded                   guifg=#0C0C0C guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=001
   hi OverLength               guifg=NONE    guibg=#641900 gui=NONE      ctermfg=NONE  ctermbg=052
 endif
 
 if s:accent == "green"
-  hi PmenuSel                 guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
-  hi PmenuThumb               guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
-  hi FoldColumn               guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
-  hi Folded                   guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
+  hi PmenuSel                 guifg=#0C0C0C guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
+  hi PmenuThumb               guifg=#0C0C0C guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
+  hi FoldColumn               guifg=#0C0C0C guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
+  hi Folded                   guifg=#0C0C0C guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
   hi OverLength               guifg=NONE    guibg=#32321E gui=NONE      ctermfg=NONE  ctermbg=022
 endif
 
 if s:accent == "yellow"
-  hi PmenuSel                 guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
-  hi PmenuThumb               guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
-  hi FoldColumn               guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
-  hi Folded                   guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
+  hi PmenuSel                 guifg=#0C0C0C guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
+  hi PmenuThumb               guifg=#0C0C0C guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
+  hi FoldColumn               guifg=#0C0C0C guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
+  hi Folded                   guifg=#0C0C0C guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
   hi OverLength               guifg=NONE    guibg=#4B4B19 gui=NONE      ctermfg=NONE  ctermbg=058
 endif
 
 if s:accent == "orange"
   hi PmenuSel                 guifg=#FFFFFF guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
   hi PmenuThumb               guifg=#FFFFFF guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
-  hi FoldColumn               guifg=#191919 guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
-  hi Folded                   guifg=#191919 guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
+  hi FoldColumn               guifg=#0C0C0C guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
+  hi Folded                   guifg=#0C0C0C guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
   hi OverLength               guifg=NONE    guibg=#443A16 gui=NONE      ctermfg=NONE  ctermbg=094
 endif
 
 if s:accent == "purple"
-  hi PmenuSel                 guifg=#191919 guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
-  hi PmenuThumb               guifg=#191919 guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
-  hi FoldColumn               guifg=#191919 guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
-  hi Folded                   guifg=#191919 guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
+  hi PmenuSel                 guifg=#0C0C0C guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
+  hi PmenuThumb               guifg=#0C0C0C guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
+  hi FoldColumn               guifg=#0C0C0C guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
+  hi Folded                   guifg=#0C0C0C guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
   hi OverLength               guifg=NONE    guibg=#332238 gui=NONE      ctermfg=NONE  ctermbg=054
 endif
 
